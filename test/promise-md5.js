@@ -25,7 +25,7 @@ describe('#promiseMd5()', function() {
         .catch(function(err) {
           // add an assertion to check the error
           expect(function() { throw err })
-            .to.throw(TypeError, 'The “data” argument must be of type string or an instance of Buffer, TypedArray, or DataView');
+            .to.throw(TypeError, 'The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received type number (12345)');
         })
         
     })

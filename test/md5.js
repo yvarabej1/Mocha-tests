@@ -35,7 +35,7 @@ describe('#md5()', function() {
         
           // add an assertion to check the error
           expect(function() { throw err })
-            .to.throw(TypeError, 'The “data” argument must be of type string or an instance of Buffer, TypedArray, or DataView');
+            .to.throw(TypeError, 'The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received type number (12345)');
             
           // finally call the done() callback
           // to terminate the test and return
